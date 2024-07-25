@@ -7,6 +7,11 @@ app.get("/", (req, res) => {
   res.send(response);
 });
 
+app.get("/test", (req, res) => {
+    response = "This is version 2 of the app" + "\n";
+    res.send(response);
+  });
+
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
 });
